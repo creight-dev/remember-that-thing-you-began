@@ -1,4 +1,10 @@
-@config './tailwind.newtab.config.js'
 @tailwind base;
+@config './tailwind.newtab.config.js'
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply h-screen bg-neutral-1;
+  }
+}

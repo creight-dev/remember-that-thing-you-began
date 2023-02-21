@@ -1,4 +1,4 @@
-@config './tailwind.popup.config.js'
 @tailwind base;
+@config './tailwind.popup.config.js'
 @tailwind components;
 @tailwind utilities;

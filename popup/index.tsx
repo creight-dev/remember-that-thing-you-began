@@ -1,6 +1,8 @@
 import Icon from "~components/shared/Icon"
 import { iconPaths } from "~components/shared/iconPaths"
 
+import "./style.css"
+
 function PopupPanel() {
   return (
     <div className="w-[336px] bg-neutral-1 p-4 text-neutral-12">

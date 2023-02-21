@@ -1,3 +1,5 @@
+import "./style.css"
+
 const NewTabPage = () => (
   <div className="bg-white py-24 px-6 sm:py-32 lg:px-8">
     <div className="mx-auto max-w-2xl text-center">
