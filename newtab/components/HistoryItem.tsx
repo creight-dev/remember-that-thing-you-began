@@ -45,7 +45,7 @@ const HistoryItem = () => (
               <div className="flex items-center justify-between">
                 <p className="truncate text-sm font-medium">{position.title}</p>
                 <div className="ml-2 flex flex-shrink-0">
-                  <p className="inline-flex rounded-full bg-mint-8/30 border border-dashed border-mint-7 px-2 text-xs font-semibold leading-5 text-mint-11">
+                  <p className="inline-flex rounded-full bg-neutral-1 border border-neutral-7 px-2 text-xs font-normal leading-5 text-neutral-9">
                     {position.type}
                   </p>
                 </div>
