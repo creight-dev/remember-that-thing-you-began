@@ -8,7 +8,7 @@ const SideBar = ({}: SideBarProps) => {
       <nav className="lg:hidden flex items-center justify-between p-8 bg-gray-700 mb-3">
         <div className="w-full xl:w-auto px-2 xl:mr-12">
           <div className="flex items-center justify-between">
-            <a className="inline-flex items-center h-8" href="#">
+            <a className="inline-flex items-center h-8" href="apps/extension/newtab/layout#">
               <img src="trizzle-assets/logos/trizzle-logo.svg" alt="" />
             </a>
             <div className="xl:hidden">
@@ -34,7 +34,7 @@ const SideBar = ({}: SideBarProps) => {
         <div className="lg:hidden navbar-backdrop fixed top-0 left-0 w-full h-full bg-gray-800 opacity-50" />
         <nav className="fixed top-0 left-0 bottom-0 w-full max-w-xxs flex flex-col h-full py-8 px-4 bg-gray-700 overflow-auto">
           <div className="mb-6">
-            <a className="inline-block mb-12" href="#">
+            <a className="inline-block mb-12" href="apps/extension/newtab/layout#">
               <img
                 className="h-7"
                 src="trizzle-assets/logos/trizzle-logo.svg"
@@ -45,7 +45,7 @@ const SideBar = ({}: SideBarProps) => {
               <li className="mb-4">
                 <a
                   className="flex items-center p-4 text-white bg-blue-500 rounded-xl"
-                  href="#">
+                  href="apps/extension/newtab/layout#">
                   <svg
                     width={20}
                     height={20}
@@ -63,7 +63,7 @@ const SideBar = ({}: SideBarProps) => {
               <li className="mb-4">
                 <a
                   className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
-                  href="#">
+                  href="apps/extension/newtab/layout#">
                   <span className="text-gray-400">
                     <svg
                       width={20}
@@ -83,7 +83,7 @@ const SideBar = ({}: SideBarProps) => {
               <li className="mb-4">
                 <a
                   className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
-                  href="#">
+                  href="apps/extension/newtab/layout#">
                   <span className="text-gray-400">
                     <svg
                       width={20}
@@ -103,7 +103,7 @@ const SideBar = ({}: SideBarProps) => {
               <li className="mb-4">
                 <a
                   className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
-                  href="#">
+                  href="apps/extension/newtab/layout#">
                   <span className="text-gray-400">
                     <svg
                       width={20}
@@ -128,7 +128,7 @@ const SideBar = ({}: SideBarProps) => {
               <li>
                 <a
                   className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
-                  href="#">
+                  href="apps/extension/newtab/layout#">
                   <span className="text-gray-400">
                     <svg
                       width={20}
@@ -150,7 +150,7 @@ const SideBar = ({}: SideBarProps) => {
           <div className="mt-auto">
             <a
               className="group block py-6 pl-6 pr-8 mb-4 bg-blue-500 hover:bg-blue-600 rounded-xl transition duration-200"
-              href="#">
+              href="apps/extension/newtab/layout#">
               <div className="flex w-12 h-12 mb-4 items-center justify-center bg-blue-600 group-hover:bg-blue-500 rounded-xl">
                 <svg
                   width={10}
@@ -173,7 +173,7 @@ const SideBar = ({}: SideBarProps) => {
             </a>
             <a
               className="group flex py-5 px-6 items-center bg-gray-600 hover:bg-gray-500 rounded-xl transition duration-200"
-              href="#">
+              href="apps/extension/newtab/layout#">
               <div className="flex w-8 h-8 mr-2 items-center justify-center bg-gray-500 group-hover:bg-gray-600 rounded-lg">
                 <img src="trizzle-assets/logos/logo-shuffle-blue.svg" alt="" />
               </div>

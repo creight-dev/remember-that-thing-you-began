@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
 const {
   formatRadixColorScaleForTailwind
-} = require("./formatRadixColorScaleForTailwind")
+} = require("../utils/colors")
 const {
   slateDark,
   mauveDark,

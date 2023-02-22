@@ -38,7 +38,7 @@ const DropdownMenu = () => (
           <Menu.Item>
             {({ active }) => (
               <a
-                href="#"
+                href="apps/extension/components/shared#"
                 className={clsx(
                   active ? "bg-neutral-3" : "text-neutral-10",
                   "block px-4 py-2 text-sm"
@@ -50,7 +50,7 @@ const DropdownMenu = () => (
           <Menu.Item>
             {({ active }) => (
               <a
-                href="#"
+                href="apps/extension/components/shared#"
                 className={clsx(
                   active ? "bg-neutral-3" : "text-neutral-10",
                   "block px-4 py-2 text-sm"
@@ -62,7 +62,7 @@ const DropdownMenu = () => (
           <Menu.Item>
             {({ active }) => (
               <a
-                href="#"
+                href="apps/extension/components/shared#"
                 className={clsx(
                   active ? "bg-neutral-3" : "text-neutral-10",
                   "block px-4 py-2 text-sm"
@@ -73,7 +73,7 @@ const DropdownMenu = () => (
           </Menu.Item>
         </div>
         <div className="py-1 border-t border-neutral-6">
-          <form method="POST" action="#">
+          <form method="POST" action="apps/extension/components/shared#">
             <Menu.Item>
               <button
                 type="submit"

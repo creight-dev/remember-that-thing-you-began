@@ -28,7 +28,7 @@ const OptionsDropdown = () => (
           <Menu.Item>
             {({ active }) => (
               <a
-                href="#"
+                href="apps/extension/components/shared#"
                 className={classNames(
                   active ? "bg-neutral-3" : "text-neutral-10",
                   "block px-4 py-2 text-sm"
@@ -40,7 +40,7 @@ const OptionsDropdown = () => (
           <Menu.Item>
             {({ active }) => (
               <a
-                href="#"
+                href="apps/extension/components/shared#"
                 className={classNames(
                   active ? "bg-neutral-3" : "text-neutral-10",
                   "block px-4 py-2 text-sm"
@@ -52,7 +52,7 @@ const OptionsDropdown = () => (
           <Menu.Item>
             {({ active }) => (
               <a
-                href="#"
+                href="apps/extension/components/shared#"
                 className={classNames(
                   active ? "bg-neutral-3" : "text-neutral-10",
                   "block px-4 py-2 text-sm"
@@ -61,7 +61,7 @@ const OptionsDropdown = () => (
               </a>
             )}
           </Menu.Item>
-          <form method="POST" action="#">
+          <form method="POST" action="apps/extension/components/shared#">
             <Menu.Item>
               {({ active }) => (
                 <button
