@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@rttyb/tailwind-preset": "workspace:*",
+    "@rttyb/ui": "workspace:*",
     "@fontsource/cabin": "^4.5.10",
     "@fontsource/sora": "^4.5.12",
     "@headlessui/react": "^1.7.11",

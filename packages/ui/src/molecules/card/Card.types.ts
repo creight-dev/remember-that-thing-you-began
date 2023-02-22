@@ -1,5 +1,5 @@
-export interface CardProps {
+export type CardProps = {
   title: string;
   cta: string;
   href: string;
-}
+};

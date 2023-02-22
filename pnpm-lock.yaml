@@ -24,6 +24,7 @@ importers:
       '@plasmohq/prettier-plugin-sort-imports': 3.6.1
       '@radix-ui/colors': ^0.1.8
       '@rttyb/tailwind-preset': workspace:*
+      '@rttyb/ui': workspace:*
       '@tailwindcss/forms': ^0.5.3
       '@types/chrome': 0.0.210
       '@types/node': 18.11.18
@@ -44,6 +45,7 @@ importers:
       '@fontsource/sora': 4.5.12
       '@headlessui/react': 1.7.11_biqbaboplfbrettd7655fr4n2y
       '@rttyb/tailwind-preset': link:../../packages/tailwind
+      '@rttyb/ui': link:../../packages/ui
       autoprefixer: 10.4.13_postcss@8.4.21
       clsx: 1.2.1
       phosphor-react: 1.4.1_react@18.2.0
@@ -65,6 +67,7 @@ importers:
 
   apps/storybook:
     specifiers:
+      '@rttyb/tailwind-preset': workspace:*
       '@rttyb/ui': workspace:*
       '@storybook/addon-actions': ^6.5.16
       '@storybook/addon-docs': ^6.5.16
@@ -85,6 +88,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
+      '@rttyb/tailwind-preset': link:../../packages/tailwind
       '@storybook/addon-actions': 6.5.16_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-docs': 6.5.16_q7lsyvw2d3stxexo3zyd2u3qjy
       '@storybook/addon-essentials': 6.5.16_q7lsyvw2d3stxexo3zyd2u3qjy
@@ -121,7 +125,6 @@ importers:
       '@types/react': ^18.0.26
       autoprefixer: ^10.4.13
       class-variance-authority: ^0.4.0
-      clsx: ^1.2.1
       eslint: ^7.32.0
       phosphor-react: ^1.4.1
       postcss: ^8.4.20
@@ -132,7 +135,6 @@ importers:
     dependencies:
       '@headlessui/react': 1.7.11_biqbaboplfbrettd7655fr4n2y
       class-variance-authority: 0.4.0_typescript@4.9.5
-      clsx: 1.2.1
     devDependencies:
       '@creight/tsconfig': link:../tsconfig
       '@radix-ui/colors': 0.1.8
