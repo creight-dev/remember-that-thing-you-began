@@ -9,7 +9,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@rttyb/tailwind-preset": "workspace:*",
+    "@rttyb/ui": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
