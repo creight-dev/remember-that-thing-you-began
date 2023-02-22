@@ -7,9 +7,9 @@ const DropdownMenu = () => (
   <Menu as="div" className="relative inline-block text-left">
     <div>
       <Menu.Button
-        className="bg-neutral-1 inline-flex w-full justify-center rounded-md border border-neutral-7
-        px-4 py-2 text-sm font-medium text-neutral-12 shadow-sm hover:bg-neutral-3 focus:outline-none focus:ring-2
-        focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-neutral-8">
+        className="bg-neutral-1 border-neutral-7 text-neutral-12 hover:bg-neutral-3 focus:ring-primary-500 focus:ring-offset-neutral-8 inline-flex
+        w-full justify-center rounded-md border px-4 py-2 text-sm font-medium shadow-sm
+        focus:outline-none focus:ring-2 focus:ring-offset-2">
         Options
         <DotsThreeVertical
           size={20}
@@ -29,9 +29,9 @@ const DropdownMenu = () => (
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95">
       <Menu.Items
-        className="bg-neutral-1 absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md
-        shadow-lg ring-1 ring-neutral-12 ring-opacity-5 focus:outline-none">
-        <div className="px-4 py-2 border-b border-neutral-6">
+        className="bg-neutral-1 ring-neutral-12 absolute right-0 z-10 mt-2 w-56 origin-top-right
+        rounded-md shadow-lg ring-1 ring-opacity-5 focus:outline-none">
+        <div className="border-neutral-6 border-b px-4 py-2">
           <p className="truncate text-sm font-medium">Projects</p>
         </div>
         <div className="py-1">
@@ -72,13 +72,13 @@ const DropdownMenu = () => (
             )}
           </Menu.Item>
         </div>
-        <div className="py-1 border-t border-neutral-6">
+        <div className="border-neutral-6 border-t py-1">
           <form method="POST" action="#">
             <Menu.Item>
               <button
                 type="submit"
                 className={clsx(
-                  "inline-flex gap-x-3 w-full px-4 py-2 text-left text-sm hover:text-primary-400"
+                  "hover:text-primary-400 inline-flex w-full gap-x-3 px-4 py-2 text-left text-sm"
                 )}>
                 <FolderPlus size={20} weight="regular" />
                 <span>Create project</span>

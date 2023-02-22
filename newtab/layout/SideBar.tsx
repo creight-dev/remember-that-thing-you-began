@@ -5,10 +5,10 @@ export type SideBarProps = {}
 const SideBar = ({}: SideBarProps) => {
   return (
     <div>
-      <nav className="lg:hidden flex items-center justify-between p-8 bg-gray-700 mb-3">
-        <div className="w-full xl:w-auto px-2 xl:mr-12">
+      <nav className="mb-3 flex items-center justify-between bg-gray-700 p-8 lg:hidden">
+        <div className="w-full px-2 xl:mr-12 xl:w-auto">
           <div className="flex items-center justify-between">
-            <a className="inline-flex items-center h-8" href="#">
+            <a className="inline-flex h-8 items-center" href="#">
               <img src="trizzle-assets/logos/trizzle-logo.svg" alt="" />
             </a>
             <div className="xl:hidden">
@@ -30,11 +30,11 @@ const SideBar = ({}: SideBarProps) => {
           </div>
         </div>
       </nav>
-      <div className="hidden lg:block navbar-menu relative z-50">
-        <div className="lg:hidden navbar-backdrop fixed top-0 left-0 w-full h-full bg-gray-800 opacity-50" />
-        <nav className="fixed top-0 left-0 bottom-0 w-full max-w-xxs flex flex-col h-full py-8 px-4 bg-gray-700 overflow-auto">
+      <div className="navbar-menu relative z-50 hidden lg:block">
+        <div className="navbar-backdrop fixed top-0 left-0 h-full w-full bg-gray-800 opacity-50 lg:hidden" />
+        <nav className="max-w-xxs fixed top-0 left-0 bottom-0 flex h-full w-full flex-col overflow-auto bg-gray-700 py-8 px-4">
           <div className="mb-6">
-            <a className="inline-block mb-12" href="#">
+            <a className="mb-12 inline-block" href="#">
               <img
                 className="h-7"
                 src="trizzle-assets/logos/trizzle-logo.svg"
@@ -44,7 +44,7 @@ const SideBar = ({}: SideBarProps) => {
             <ul>
               <li className="mb-4">
                 <a
-                  className="flex items-center p-4 text-white bg-blue-500 rounded-xl"
+                  className="flex items-center rounded-xl bg-blue-500 p-4 text-white"
                   href="#">
                   <svg
                     width={20}
@@ -62,7 +62,7 @@ const SideBar = ({}: SideBarProps) => {
               </li>
               <li className="mb-4">
                 <a
-                  className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
+                  className="flex items-center rounded-xl p-4 text-gray-300 hover:bg-gray-800"
                   href="#">
                   <span className="text-gray-400">
                     <svg
@@ -82,7 +82,7 @@ const SideBar = ({}: SideBarProps) => {
               </li>
               <li className="mb-4">
                 <a
-                  className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
+                  className="flex items-center rounded-xl p-4 text-gray-300 hover:bg-gray-800"
                   href="#">
                   <span className="text-gray-400">
                     <svg
@@ -102,7 +102,7 @@ const SideBar = ({}: SideBarProps) => {
               </li>
               <li className="mb-4">
                 <a
-                  className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
+                  className="flex items-center rounded-xl p-4 text-gray-300 hover:bg-gray-800"
                   href="#">
                   <span className="text-gray-400">
                     <svg
@@ -120,14 +120,14 @@ const SideBar = ({}: SideBarProps) => {
                   <span className="ml-4 mr-auto text-sm font-semibold">
                     Orders
                   </span>
-                  <span className="flex items-center justify-center w-6 h-6 bg-blue-500 text-white text-xs font-semibold rounded-full">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 text-xs font-semibold text-white">
                     4
                   </span>
                 </a>
               </li>
               <li>
                 <a
-                  className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
+                  className="flex items-center rounded-xl p-4 text-gray-300 hover:bg-gray-800"
                   href="#">
                   <span className="text-gray-400">
                     <svg
@@ -149,9 +149,9 @@ const SideBar = ({}: SideBarProps) => {
           </div>
           <div className="mt-auto">
             <a
-              className="group block py-6 pl-6 pr-8 mb-4 bg-blue-500 hover:bg-blue-600 rounded-xl transition duration-200"
+              className="group mb-4 block rounded-xl bg-blue-500 py-6 pl-6 pr-8 transition duration-200 hover:bg-blue-600"
               href="#">
-              <div className="flex w-12 h-12 mb-4 items-center justify-center bg-blue-600 group-hover:bg-blue-500 rounded-xl">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 group-hover:bg-blue-500">
                 <svg
                   width={10}
                   height={12}
@@ -164,20 +164,20 @@ const SideBar = ({}: SideBarProps) => {
                   />
                 </svg>
               </div>
-              <h5 className="text-sm font-medium text-blue-50 mb-2">
+              <h5 className="mb-2 text-sm font-medium text-blue-50">
                 Upgrade to PRO
               </h5>
-              <p className="text-xs leading-normal font-semibold text-blue-200">
+              <p className="text-xs font-semibold leading-normal text-blue-200">
                 One year support, monthly updates for up to 5 team members.
               </p>
             </a>
             <a
-              className="group flex py-5 px-6 items-center bg-gray-600 hover:bg-gray-500 rounded-xl transition duration-200"
+              className="group flex items-center rounded-xl bg-gray-600 py-5 px-6 transition duration-200 hover:bg-gray-500"
               href="#">
-              <div className="flex w-8 h-8 mr-2 items-center justify-center bg-gray-500 group-hover:bg-gray-600 rounded-lg">
+              <div className="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-gray-500 group-hover:bg-gray-600">
                 <img src="trizzle-assets/logos/logo-shuffle-blue.svg" alt="" />
               </div>
-              <span className="text-sm text-gray-100 font-medium">Shuffle</span>
+              <span className="text-sm font-medium text-gray-100">Shuffle</span>
               <div className="ml-auto text-gray-400 group-hover:text-gray-300">
                 <svg
                   width={4}

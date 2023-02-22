@@ -36,16 +36,16 @@ const positions = [
 ]
 
 const HistoryItem = () => (
-  <div className="overflow-hidden bg-neutral-1 rounded-b-xl">
-    <ul role="list" className="divide-y divide-dashed divide-neutral-6">
+  <div className="bg-neutral-1 overflow-hidden rounded-b-xl">
+    <ul role="list" className="divide-neutral-6 divide-y divide-dashed">
       {positions.map((position) => (
         <li key={position.id}>
-          <a href="#" className="block hover:bg-neutral-2">
+          <a href="#" className="hover:bg-neutral-2 block">
             <div className="px-4 py-4 sm:px-6">
               <div className="flex items-center justify-between">
                 <p className="truncate text-sm font-medium">{position.title}</p>
                 <div className="ml-2 flex flex-shrink-0">
-                  <p className="inline-flex rounded-full bg-neutral-1 border border-neutral-7 px-2 text-xs font-normal leading-5 text-neutral-9">
+                  <p className="bg-neutral-1 border-neutral-7 text-neutral-9 inline-flex rounded-full border px-2 text-xs font-normal leading-5">
                     {position.type}
                   </p>
                 </div>

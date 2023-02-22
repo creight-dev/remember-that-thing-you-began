@@ -4,7 +4,9 @@
 @tailwind utilities;
 
 @layer base {
-  html, body,#__plasmo {
-    @apply h-screen bg-neutral-1 text-neutral-11 font-sans overflow-hidden;
+  html,
+  body,
+  #__plasmo {
+    @apply bg-neutral-1 text-neutral-11 h-screen overflow-hidden font-sans;
   }
 }

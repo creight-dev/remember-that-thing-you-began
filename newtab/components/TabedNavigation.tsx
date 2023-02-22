@@ -7,7 +7,6 @@ const tabs = [
     icon: ClockCounterClockwise,
     current: true
   },
-  { name: "Projects", href: "#", icon: FolderOpen, current: false },
   { name: "Sessions", href: "#", icon: ArchiveTray, current: false }
 ]
 
@@ -41,16 +40,16 @@ const TabedNaviation = () => (
               href={tab.href}
               className={classNames(
                 tab.current
-                  ? "border-primary-500 text-primary-600"
-                  : "border-transparent text-neutral-10 hover:text-neutral-11 hover:border-neutral-8",
-                "group inline-flex items-center py-4 px-1 border-b-2 font-medium text-sm"
+                  ? "border-orange-500 text-orange-600"
+                  : "text-neutral-10 hover:text-neutral-11 hover:border-neutral-8 border-transparent",
+                "group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium"
               )}
               aria-current={tab.current ? "page" : undefined}>
               <tab.icon
                 weight="duotone"
                 className={classNames(
                   tab.current
-                    ? "text-primary-100"
+                    ? "text-orange-100"
                     : "text-neutral-10 group-hover:text-neutral-11",
                   "-ml-0.5 mr-2 h-5 w-5"
                 )}
