@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/cabin': ^4.5.10
+  '@fontsource/sora': ^4.5.12
   '@headlessui/react': ^1.7.11
   '@plasmohq/prettier-plugin-sort-imports': 3.6.1
   '@radix-ui/colors': ^0.1.8
@@ -21,6 +23,8 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
+  '@fontsource/cabin': 4.5.10
+  '@fontsource/sora': 4.5.12
   '@headlessui/react': 1.7.11_biqbaboplfbrettd7655fr4n2y
   autoprefixer: 10.4.13_postcss@8.4.21
   clsx: 1.2.1
@@ -536,6 +540,14 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       cross-spawn: 7.0.3
+    dev: false
+
+  /@fontsource/cabin/4.5.10:
+    resolution: {integrity: sha512-nZWikOWwI6ONqDJco+pplHKqKCQlGdLo90eTT/Yp2lDAG1cKgXsRXEmU0KTsH3AUHO8lxXRHBPONoHSqyt8HmQ==}
+    dev: false
+
+  /@fontsource/sora/4.5.12:
+    resolution: {integrity: sha512-7pWwrWIKcLH0pvKCSssb96KFFKwt5+eKHC4yHfFYtxapQ6Ax+/Rj02QHnIkXyy5nc5cOvyOAQM2MAIGlMtoj9w==}
     dev: false
 
   /@headlessui/react/1.7.11_biqbaboplfbrettd7655fr4n2y:
