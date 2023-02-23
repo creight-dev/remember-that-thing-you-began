@@ -24,12 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
               </div>
               {/*  --------- Content Container -------- */}
               <div className="flex flex-grow flex-col space-y-4 overflow-y-hidden">
-                {/* -------- Subpage Navigation Here --------- */}
-                <TabedNavigation />
-                {/*  Scrollable Content */}
-                <div className="flex flex-col gap-y-7 overflow-y-auto">
-                  {children}
-                </div>
+                {children}
               </div>
             </div>
           </div>

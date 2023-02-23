@@ -11,14 +11,19 @@
   },
   "dependencies": {
     "@fontsource/cabin": "^4.5.10",
+    "@fontsource/fira-code": "^4.5.13",
     "@fontsource/sora": "^4.5.12",
     "@headlessui/react": "^1.7.11",
     "autoprefixer": "^10.4.13",
+    "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "phosphor-react": "^1.4.1",
     "plasmo": "0.65.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-json-view": "^1.21.3",
+    "react-json-view-lite": "^0.9.4",
+    "react-object-view": "^0.3.4"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "3.6.1",
@@ -37,6 +42,9 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "history"
     ]
   }
 }

@@ -1,4 +1,4 @@
-import { ArchiveTray, ClockCounterClockwise, FolderOpen } from "phosphor-react"
+import { ArchiveTray, ClockCounterClockwise, MapPin } from "phosphor-react"
 
 const tabs = [
   {
@@ -7,6 +7,7 @@ const tabs = [
     icon: ClockCounterClockwise,
     current: true
   },
+  { name: "Visits", href: "#", icon: MapPin, current: false },
   { name: "Sessions", href: "#", icon: ArchiveTray, current: false }
 ]
 
@@ -32,34 +33,32 @@ const TabedNaviation = () => (
       </select>
     </div>
     <div className="hidden sm:block">
-      <div className="">
-        <nav className="-mb-px flex space-x-8" aria-label="Tabs">
-          {tabs.map((tab) => (
-            <a
-              key={tab.name}
-              href={tab.href}
+      <nav className="-mb-px flex space-x-8" aria-label="Tabs">
+        {tabs.map((tab) => (
+          <a
+            key={tab.name}
+            href={tab.href}
+            className={classNames(
+              tab.current
+                ? "border-orange-500 text-orange-600"
+                : "text-neutral-10 hover:text-neutral-11 hover:border-neutral-8 border-transparent",
+              "group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium"
+            )}
+            aria-current={tab.current ? "page" : undefined}>
+            <tab.icon
+              weight="duotone"
               className={classNames(
                 tab.current
-                  ? "border-orange-500 text-orange-600"
-                  : "text-neutral-10 hover:text-neutral-11 hover:border-neutral-8 border-transparent",
-                "group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium"
+                  ? "text-orange-100"
+                  : "text-neutral-10 group-hover:text-neutral-11",
+                "-ml-0.5 mr-2 h-5 w-5"
               )}
-              aria-current={tab.current ? "page" : undefined}>
-              <tab.icon
-                weight="duotone"
-                className={classNames(
-                  tab.current
-                    ? "text-orange-100"
-                    : "text-neutral-10 group-hover:text-neutral-11",
-                  "-ml-0.5 mr-2 h-5 w-5"
-                )}
-                aria-hidden="true"
-              />
-              <span>{tab.name}</span>
-            </a>
-          ))}
-        </nav>
-      </div>
+              aria-hidden="true"
+            />
+            <span>{tab.name}</span>
+          </a>
+        ))}
+      </nav>
     </div>
   </div>
 )
